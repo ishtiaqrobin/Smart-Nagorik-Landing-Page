@@ -81,9 +81,9 @@ export const Banner: React.FC<BannerProps> = ({ onActionClick }) => {
               />
 
               {/* Floating Stat Badges container */}
-              <div className="absolute right-0 sm:-right-4 top-1/4 -translate-y-8 flex flex-col gap-4 z-20">
+              <div className="absolute -right-2 sm:-right-10 lg:-right-14 top-1/4 -translate-y-6 flex flex-col gap-4 z-20">
                 {/* Badge 1: Citizen Services */}
-                <div className="animate-float-1 bg-white/95 backdrop-blur-sm rounded-xl py-3 px-4 sm:px-5 shadow-badge border border-slate-100 flex items-center gap-3.5 transition-transform hover:scale-105 select-none">
+                <div className="animate-float-1 bg-white rounded-xl py-3 px-4 sm:px-5 shadow-[0_8px_25px_rgba(0,0,0,0.06)] border border-slate-100 flex items-center gap-3.5 transition-all hover:scale-105 select-none">
                   <div className="w-11 h-11 rounded-lg bg-[#e6f8f4] flex items-center justify-center flex-shrink-0">
                     <img
                       src={humanSvg}
@@ -102,7 +102,7 @@ export const Banner: React.FC<BannerProps> = ({ onActionClick }) => {
                 </div>
 
                 {/* Badge 2: Active Unions */}
-                <div className="animate-float-2 bg-white/95 backdrop-blur-sm rounded-xl py-3 px-4 sm:px-5 shadow-badge border border-slate-100 flex items-center gap-3.5 transition-transform hover:scale-105 select-none">
+                <div className="animate-float-2 bg-white rounded-xl py-3 px-4 sm:px-5 shadow-[0_8px_25px_rgba(0,0,0,0.06)] border border-slate-100 flex items-center gap-3.5 transition-all hover:scale-105 select-none">
                   <div className="w-11 h-11 rounded-lg bg-[#e6f8f4] flex items-center justify-center flex-shrink-0">
                     <img
                       src={homeSvg}
