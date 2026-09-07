@@ -59,18 +59,18 @@ export const WhySmartNagorikSection: React.FC = () => {
         </div>
 
         {/* 6 Feature Cards Grid (3 columns on lg matching screenshot) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature) => (
             <div
               key={feature.id}
-              className="bg-white rounded-xl border border-slate-200/80 p-7 sm:p-8 flex flex-col items-start text-left shadow-[0_2px_15px_rgba(0,0,0,0.02)] transition-all duration-300 hover:shadow-md hover:border-slate-300 group"
+              className="group relative bg-white rounded-lg border border-slate-400/30 p-7 flex flex-col items-start text-left transform-gpu transition-all duration-300 ease-out hover:border-[#00b795] hover:-translate-y-1 hover:shadow-md cursor-pointer"
             >
               {/* Icon Container */}
-              <div className="w-14 h-14 rounded-lg bg-[#e6f8f4] flex items-center justify-center mb-6 flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+              <div className="w-16 h-16 rounded-md bg-[#e6f8f4] flex items-center justify-center mb-6 flex-shrink-0">
                 <img
                   src={feature.icon}
                   alt={feature.title}
-                  className="w-7 h-7 object-contain"
+                  className="w-10 h-10 object-contain"
                 />
               </div>
 
@@ -80,7 +80,7 @@ export const WhySmartNagorikSection: React.FC = () => {
               </h3>
 
               {/* Feature Description */}
-              <p className="text-slate-600 text-sm sm:text-[15px] leading-relaxed font-bangla">
+              <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-bangla">
                 {feature.description}
               </p>
             </div>

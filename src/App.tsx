@@ -4,6 +4,7 @@ import { Banner } from "./components/Banner";
 import { ServicesSection } from "./components/ServicesSection";
 import { ApplyProcessSection } from "./components/ApplyProcessSection";
 import { WhySmartNagorikSection } from "./components/WhySmartNagorikSection";
+import { FaqSection } from "./components/FaqSection";
 
 export const App: React.FC = () => {
   const [toastMessage, setToastMessage] = useState<string | null>(null);
@@ -84,6 +85,9 @@ export const App: React.FC = () => {
 
         {/* Why Smart Nagorik Section */}
         <WhySmartNagorikSection />
+
+        {/* FAQ Section */}
+        <FaqSection />
       </main>
     </div>
   );
