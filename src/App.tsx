@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Navbar } from "./components/Navbar";
 import { Banner } from "./components/Banner";
 import { ServicesSection } from "./components/ServicesSection";
+import { ApplyProcessSection } from "./components/ApplyProcessSection";
 
 export const App: React.FC = () => {
   const [toastMessage, setToastMessage] = useState<string | null>(null);
@@ -47,7 +48,7 @@ export const App: React.FC = () => {
         <button
           onClick={scrollToTop}
           aria-label="Scroll to Top"
-          className="fixed bottom-6 right-6 z-40 w-11 h-11 rounded-full bg-[#00b795] hover:bg-[#00a384] text-white flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 cursor-pointer"
+          className="fixed bottom-6 right-6 z-40 w-11 h-11 rounded-full bg-[#00b795] hover:bg-[#00a384] text-[#ffffff] flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 cursor-pointer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -76,6 +77,9 @@ export const App: React.FC = () => {
 
         {/* Our Services Section */}
         <ServicesSection onServiceClick={handleAction} />
+
+        {/* Application Process Section */}
+        <ApplyProcessSection />
       </main>
     </div>
   );
