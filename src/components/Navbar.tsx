@@ -74,7 +74,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavClick }) => {
           <div className="hidden md:flex items-center space-x-3.5">
             <button
               onClick={(e) => handleLinkClick("প্রতিষ্ঠান লগইন", e)}
-              className="inline-flex items-center justify-center border border-[#00b795] text-[#00b795] bg-[#00b795]/[0.05] hover:bg-[#00b795] hover:text-white px-4 lg:px-5 py-2 rounded-md font-medium text-sm transition-all duration-200 cursor-pointer"
+              className="inline-flex items-center justify-center border border-[#00b795] text-[#00b795] bg-[#00b795]/[0.05] px-4 lg:px-5 py-2 rounded-md font-medium text-sm transition-all duration-200 cursor-pointer"
             >
               প্রতিষ্ঠান লগইন
             </button>
