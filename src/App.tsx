@@ -5,6 +5,7 @@ import { ServicesSection } from "./components/ServicesSection";
 import { ApplyProcessSection } from "./components/ApplyProcessSection";
 import { WhySmartNagorikSection } from "./components/WhySmartNagorikSection";
 import { FaqSection } from "./components/FaqSection";
+import { StartServiceCtaSection } from "./components/StartServiceCtaSection";
 
 export const App: React.FC = () => {
   const [toastMessage, setToastMessage] = useState<string | null>(null);
@@ -88,6 +89,9 @@ export const App: React.FC = () => {
 
         {/* FAQ Section */}
         <FaqSection />
+
+        {/* Start Service CTA Section */}
+        <StartServiceCtaSection onCtaClick={handleAction} />
       </main>
     </div>
   );
