@@ -34,7 +34,7 @@ export const Banner: React.FC<BannerProps> = ({ onActionClick }) => {
           <div className="lg:col-span-6 flex flex-col items-start z-10">
             {/* Title with yellow decorative curve */}
             <div className="relative inline-block mb-3">
-              <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-black text-slate-800 tracking-tight leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-[60px] font-black text-slate-800 tracking-tight leading-tight">
                 স্মার্ট নাগরিক
               </h1>
               <div className="mt-1 -ml-1">
@@ -47,7 +47,7 @@ export const Banner: React.FC<BannerProps> = ({ onActionClick }) => {
             </div>
 
             {/* Tagline / Mission quote */}
-            <p className="mt-4 text-slate-700 text-base sm:text-lg lg:text-[19px] leading-relaxed max-w-xl font-normal">
+            <p className="mt-4 text-slate-700 text-base sm:text-lg lg:text-xl leading-relaxed max-w-xl font-normal">
               “সকল নাগরিক সেবা হাতের মুঠোয় ও ইউনিয়নের সকল সেবা প্রদান ডিজিটালের মাধ্যমে স্মার্ট ও ডিজিটাল বাংলাদেশ গড়াই আমাদের ভিশন”
             </p>
 
