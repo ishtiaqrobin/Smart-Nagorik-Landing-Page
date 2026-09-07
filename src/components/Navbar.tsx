@@ -55,7 +55,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavClick }) => {
                   key={link.name}
                   href={`#${link.id}`}
                   onClick={(e) => handleLinkClick(link.name, e)}
-                  className={`relative text-[15px] font-medium transition-colors duration-200 py-1 ${
+                  className={`relative text-base font-semibold transition-colors duration-200 py-1 ${
                     isActive
                       ? "text-[#00b795] font-semibold"
                       : "text-slate-700 hover:text-[#00b795]"
