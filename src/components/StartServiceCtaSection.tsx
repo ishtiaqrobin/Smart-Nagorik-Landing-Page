@@ -32,7 +32,7 @@ export const StartServiceCtaSection: React.FC<StartServiceCtaSectionProps> = ({
           <button
             type="button"
             onClick={handleClick}
-            className="bg-white hover:bg-slate-50 text-[#0f172a] font-bold px-8 py-3 rounded-md text-sm sm:text-base transition-all duration-200 shadow-sm hover:shadow-md cursor-pointer select-none"
+            className="bg-white hover:bg-slate-50 text-[#0f172a] font-bold px-8 py-3 rounded-md text-sm sm:text-base shadow-sm hover:shadow-md cursor-pointer select-none"
           >
             নাগরিক রেজিস্ট্রেশন
           </button>

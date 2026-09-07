@@ -6,6 +6,7 @@ import { ApplyProcessSection } from "./components/ApplyProcessSection";
 import { WhySmartNagorikSection } from "./components/WhySmartNagorikSection";
 import { FaqSection } from "./components/FaqSection";
 import { StartServiceCtaSection } from "./components/StartServiceCtaSection";
+import { Footer } from "./components/Footer";
 
 export const App: React.FC = () => {
   const [toastMessage, setToastMessage] = useState<string | null>(null);
@@ -93,6 +94,9 @@ export const App: React.FC = () => {
         {/* Start Service CTA Section */}
         <StartServiceCtaSection onCtaClick={handleAction} />
       </main>
+
+      {/* Footer Section */}
+      <Footer onFooterLinkClick={handleAction} />
     </div>
   );
 };
