@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NoticeBar } from "./components/NoticeBar";
 import { Navbar } from "./components/Navbar";
 import { Banner } from "./components/Banner";
 import { ServicesSection } from "./components/ServicesSection";
@@ -7,9 +8,11 @@ import { WhySmartNagorikSection } from "./components/WhySmartNagorikSection";
 import { FaqSection } from "./components/FaqSection";
 import { StartServiceCtaSection } from "./components/StartServiceCtaSection";
 import { Footer } from "./components/Footer";
+import { DevelopmentNoticeModal } from "./components/DevelopmentNoticeModal";
 
 export const App: React.FC = () => {
-  const [toastMessage, setToastMessage] = useState<string | null>(null);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedFeature, setSelectedFeature] = useState<string | null>(null);
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
@@ -29,23 +32,21 @@ export const App: React.FC = () => {
   };
 
   const handleAction = (itemName: string) => {
-    setToastMessage(`"${itemName}" নির্বাচন করা হয়েছে।`);
-    setTimeout(() => {
-      setToastMessage(null);
-    }, 3000);
+    setSelectedFeature(itemName);
+    setModalOpen(true);
   };
 
   return (
     <div className="min-h-screen bg-white flex flex-col font-bangla antialiased text-slate-800 relative">
-      {/* Interactive Toast Notification for dummy links */}
-      {toastMessage && (
-        <div className="fixed bottom-6 left-6 z-50 animate-in fade-in slide-in-from-bottom-3 duration-300">
-          <div className="bg-slate-900/90 backdrop-blur-sm text-white px-5 py-3 rounded-lg shadow-xl text-sm flex items-center gap-3 border border-slate-700">
-            <span className="w-2 h-2 rounded-full bg-[#00b795] animate-pulse"></span>
-            <span>{toastMessage}</span>
-          </div>
-        </div>
-      )}
+      {/* Top Running Announcement Notice Bar */}
+      <NoticeBar />
+
+      {/* Meaningful Under-Development Modal Popup */}
+      <DevelopmentNoticeModal
+        isOpen={modalOpen}
+        featureName={selectedFeature}
+        onClose={() => setModalOpen(false)}
+      />
 
       {/* Floating Scroll to Top Button */}
       {showScrollTop && (
