@@ -18,7 +18,7 @@ export const Banner: React.FC<BannerProps> = ({ onActionClick }) => {
 
   return (
     <section
-      className="relative w-full overflow-hidden bg-cover bg-center bg-no-repeat pt-12 pb-14 md:pt-16 md:pb-24 lg:pt-20 lg:pb-28"
+      className="relative w-full overflow-hidden bg-cover bg-center bg-no-repeat pt-12 pb-14 md:pt-16 md:pb-24 lg:pt-28 lg:pb-28"
       style={{
         backgroundImage: `url(${bannerBgImg})`,
         backgroundColor: "#f9fcfb",
