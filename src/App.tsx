@@ -3,6 +3,7 @@ import { Navbar } from "./components/Navbar";
 import { Banner } from "./components/Banner";
 import { ServicesSection } from "./components/ServicesSection";
 import { ApplyProcessSection } from "./components/ApplyProcessSection";
+import { WhySmartNagorikSection } from "./components/WhySmartNagorikSection";
 
 export const App: React.FC = () => {
   const [toastMessage, setToastMessage] = useState<string | null>(null);
@@ -80,6 +81,9 @@ export const App: React.FC = () => {
 
         {/* Application Process Section */}
         <ApplyProcessSection />
+
+        {/* Why Smart Nagorik Section */}
+        <WhySmartNagorikSection />
       </main>
     </div>
   );
