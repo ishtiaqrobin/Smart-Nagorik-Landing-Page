@@ -89,15 +89,15 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
         </div>
 
         {/* Services Grid (6 columns on lg screens matching screenshot) */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 sm:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 sm:gap-5">
           {services.map((service) => (
             <div
               key={service.id}
               onClick={() => handleCardClick(service.name)}
-              className="group relative bg-white rounded-2xl border border-slate-200/70 p-6 flex flex-col items-center justify-center text-center cursor-pointer transition-all duration-300 hover:shadow-lg hover:border-slate-300 hover:-translate-y-1 select-none min-h-[170px]"
+              className="group relative bg-white rounded-lg border border-slate-400/30 p-6 flex flex-col items-center justify-center text-center cursor-pointer transition-all duration-300 hover:border-[#00b795] hover:-translate-y-1 select-none min-h-[170px]"
             >
               {/* Icon Container */}
-              <div className="w-14 h-14 rounded-xl bg-[#e6f8f4] flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110">
+              <div className="w-14 h-14 rounded-md bg-[#e6f8f4] flex items-center justify-center mb-4 transition-transform duration-300">
                 <img
                   src={service.icon}
                   alt={service.name}
