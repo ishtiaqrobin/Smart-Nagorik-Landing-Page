@@ -29,7 +29,7 @@ export const App: React.FC = () => {
   };
 
   const handleAction = (itemName: string) => {
-    setToastMessage(`"${itemName}" নির্বাচন করা হয়েছে`);
+    setToastMessage(`"${itemName}" নির্বাচন করা হয়েছে।`);
     setTimeout(() => {
       setToastMessage(null);
     }, 3000);
