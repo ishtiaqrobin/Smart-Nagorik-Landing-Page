@@ -52,7 +52,7 @@ export const Banner: React.FC<BannerProps> = ({ onActionClick }) => {
               <button
                 type="button"
                 onClick={() => handleClick("নাগরিক লগইন")}
-                className="inline-flex items-center justify-center border border-[#00b795] text-[#00b795] bg-[#00b795]/[0.05] hover:bg-[#00b795] hover:text-white px-6 py-2.5 rounded-md font-medium text-sm transition-all duration-200 cursor-pointer"
+                className="inline-flex items-center justify-center border border-[#00b795] text-[#00b795] bg-[#00b795]/[0.05] px-6 py-2.5 rounded-md font-medium text-sm transition-all duration-200 cursor-pointer"
               >
                 নাগরিক লগইন
               </button>
