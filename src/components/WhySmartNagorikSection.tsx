@@ -63,7 +63,7 @@ export const WhySmartNagorikSection: React.FC = () => {
           {features.map((feature) => (
             <div
               key={feature.id}
-              className="group relative bg-white rounded-lg border border-slate-400/30 p-7 flex flex-col items-start text-left transform-gpu transition-all duration-300 ease-out hover:border-[#00b795] hover:-translate-y-1 hover:shadow-md cursor-pointer"
+              className="group relative bg-white rounded-lg border border-slate-400/30 p-7 flex flex-col items-start text-left transform-gpu transition-all duration-300 ease-out hover:border-[#00b795] hover:-translate-y-1 hover:shadow-md"
             >
               {/* Icon Container */}
               <div className="w-16 h-16 rounded-md bg-[#e6f8f4] flex items-center justify-center mb-6 flex-shrink-0">
